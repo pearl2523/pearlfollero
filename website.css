@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --white-color: #fff;
+    --dark-color: #252525;
+    --light-color: pink;
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+.section-title {
+    text-align: center;
+    padding: 20px 0 40px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+    font-family: "Poppins", serif;
+    color: var(--light-color);
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--light-color);
+}
+
+header {
+    background: var(--dark-color);
+    background-size: cover;
+    background-position: center;
+    min-height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    transition: 0.3 ease;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.navbar .nav-logo .logo-text {
+    color: white;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-s);
+    border-radius: var(--border-radius-m);
+    transition: 0.03 ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--dark-color);
+    background-color: pink;
+}
+
+.navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(255, 243, 243, 0.863)), url(../pearl/forweb.jpg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: center;
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    
+}
+
+
+.hero-section .hero-details .title {
+    color: pink;
+    font-family:"Poppins", sans-serif;
+}
+
+.about-section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(255, 243, 243, 0.863)), url(../pearl/forweb.jpg.jpg);
+    background-size: cover;
+}
+
+.about-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-section .about-image-wrapper .about-image {
+    width: 400px;
+    height: 500px;
+    object-fit: contain;
+
+}
+
+.about-section .about-details .section-title {
+    padding: 0;
+}
+
+.about-section .about-details {
+    max-width: 50%;
+}
+
+.about-section .about-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-l);
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+.hobby-section{
+    padding: 120px 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(255, 243, 243, 0.863)), url(../pearl/forweb.jpg.jpg);
+
+}
+
+.hobby-section .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobby-section .hobby-image-wrapper .hobby-image {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+
+}
+
+.hobby-section .hobby-image-wrapper .hobby-image {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+
+}
+
+.hobby-section .hobby-details .section-title {
+    padding: 0;
+}
+
+.hobby-section .hobby-details {
+    max-width: 50%;
+}
+
+.hobby-section .hobby-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-l);
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+.hobby-section .hobby-details .name {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: var(--font-size-l);
+    color: var(--light-color);
+}
+
+.hobby-section .hobby-details1 .text1 {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-l);
+    font-family: "Poppins", serif;
+    color: black;
+}
+
+.hobby-section .hobby-details1 .name1 {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: var(--font-size-l);
+    color: var(--dark-color);
+}
+
+
+.contact-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(255, 243, 243, 0.863)), url(../pearl/forweb.jpg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px; /* Adds spacing between elements */
+}
+
+/* Wrap social icons and form together */
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 700px; /* Adjust spacing between icons and form */
+}
+
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px; /* Ensure it has a proper width */
+}
+
+.contact-form label {
+    color: black;
+}
+
+.contact-form .heading {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-logo {
+    height: 50vh;
+    width: 50%;
+}
+
+/* Social Icons Positioned Next to Contact Form */
+.social-icons {
+    display: flex;
+    flex-direction: column; /* Aligns icons vertically */
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: block;
+    
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.contact-container .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+  
+@media screen and (max-width: 900px) {
+
+    :root {
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    .hero-section .section-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        text-align: center;
+        padding: 30% 20% 20%;
+    }
+
+    .about-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .about-section .about-image-wrapper .about-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+    .hobby-section .section-content {
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .hobby-section .hobby-image-wrapper .hobby-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+
+    .contact-section .contact-form {
+        gap: 70px;
+        flex-direction: column;
+        margin: 60px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
